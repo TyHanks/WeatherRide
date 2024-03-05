@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Meta Data-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Import CSS Files-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <title>OverlandOutline</title>
+
+    </head>
+
+    <body>
+
+        <!-- Just some bs filler html -->
+        {% for key, value in context.items() %}
+            <li>{{ key }}: {{ value }}</li>
+        {% endfor %}
+
+        <!-- Import Javascript Files -->
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+        
+    </body>
+
+</html>
